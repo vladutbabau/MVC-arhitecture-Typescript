@@ -9,10 +9,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node ./dist/app.js"
+    "start": "npm run sqlcopy && tsc && node ./dist/app.js",
+    "sqlcopy": "cd src && copyfiles ./**/*.sql ../dist/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
 }

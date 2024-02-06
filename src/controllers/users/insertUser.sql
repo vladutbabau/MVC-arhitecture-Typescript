@@ -1,0 +1,1 @@
+INSERT INTO telacad_users(userName, surName) VALUES (?, ?);

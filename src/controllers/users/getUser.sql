@@ -1,0 +1,1 @@
+SELECT * FROM telacad_users WHERE id = ?
